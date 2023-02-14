@@ -23,6 +23,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # apps
     "users.apps.UsersConfig",
+    "tickets.apps.TicketsConfig",
+    "user_messages.apps.UserMessagesConfig",
     # side-packages
     "rest_framework",
     "rest_framework_simplejwt",
@@ -39,8 +41,8 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
 
 MIDDLEWARE = [

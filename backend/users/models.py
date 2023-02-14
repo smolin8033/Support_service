@@ -4,10 +4,9 @@ from django.db import models
 from users.constants import ROLE_CHOICES
 
 
-# Create your models here.
 class User(AbstractUser):
     """
-    Пользователь. Может быть либо из службы поддержки, либо пользователем
+    Пользователь. Может быть либо из службы поддержки, либо пользователем(клиентом, кастомером)
     """
 
     role = models.CharField(max_length=30, blank=True, choices=ROLE_CHOICES)
